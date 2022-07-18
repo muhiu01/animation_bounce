@@ -1,0 +1,48 @@
+@keyframes movingball {
+    0% {
+        top: opx;
+        background-color: red;
+    }
+
+    25% {
+        top: 200px;
+        /* bottom: 100px; */
+        left: 150px;
+        background-color: fuchsia
+    }
+
+    50% {
+        top: 0px;
+        left: 300px;
+        background-color: blue;
+    }
+
+    75% {
+        top: 200px;
+        left: 450px;
+        background-color: gold
+    }
+
+    100% {
+        top: 0px;
+        left: 600px;
+        background-color: skyblue;
+    }
+}
+
+.stage {
+    height: 300px;
+    width: 700px;
+    background-color: black;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+.ball {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
+    animation: movingball 5s infinite 0.5s ease alternate;
+    -o-animation-play-state: running;
+}
